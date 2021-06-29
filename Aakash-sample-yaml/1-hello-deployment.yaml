@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deploy
+  labels:
+    run: hello
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: hello
+  template:
+    metadata:
+    labels:
+      run: hello
+    spec:
+      containers:
+      - image: hello
+        name: hello
