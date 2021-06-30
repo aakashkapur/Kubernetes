@@ -14,9 +14,10 @@ spec:
     metadata:
       labels:
         run: nginx
-    nodeSelector: 
-      demoserver: "true"
+
     spec:
+      nodeSelector:
+        demoserver: "true"
       containers:
         -
           image: nginx
