@@ -19,6 +19,5 @@ spec:
       nodeSelector:
         demoserver: "true"
       containers:
-        -
-          image: nginx
+        -image: nginx
           name: nginx
