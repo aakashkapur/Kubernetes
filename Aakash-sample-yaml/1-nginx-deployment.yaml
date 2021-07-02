@@ -5,7 +5,7 @@ metadata:
   labels:
     run: nginx
   name: nginx-deploy
-spec:
+spec: 
   replicas: 2
   selector:
     matchLabels:
@@ -14,10 +14,10 @@ spec:
     metadata:
       labels:
         run: nginx
-
     spec:
+      containers:
+        -
+          image: nginx
+          name: nginx
       nodeSelector:
         demoserver: "true"
-      containers:
-        -image: nginx
-          name: nginx
