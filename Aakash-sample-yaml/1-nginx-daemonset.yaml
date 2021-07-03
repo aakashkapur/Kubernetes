@@ -6,11 +6,11 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: hello-world
+      demotype: nginx-daemonset-demo
   template:
     metadata:
       labels:
-        demotype: nginx-daemonse-dem
+        demotype: nginx-daemonset-demo
     spec:
       containers:
         -
