@@ -10,3 +10,7 @@ spec:
     -
       image: mariadb
       name: mariadb
+      env:
+      -
+        name: MARIADB_ROOT_PASSWORD
+        value: password
